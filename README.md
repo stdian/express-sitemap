@@ -1,10 +1,6 @@
 # [express-sitemap](https://github.com/hex7c0/express-sitemap)
 
-[![NPM version](https://img.shields.io/npm/v/express-sitemap.svg)](https://www.npmjs.com/package/express-sitemap)
-[![Linux Status](https://img.shields.io/travis/hex7c0/express-sitemap.svg?label=linux-osx)](https://travis-ci.org/hex7c0/express-sitemap)
-[![Windows Status](https://img.shields.io/appveyor/ci/hex7c0/express-sitemap.svg?label=windows)](https://ci.appveyor.com/project/hex7c0/express-sitemap)
-[![Dependency Status](https://img.shields.io/david/hex7c0/express-sitemap.svg)](https://david-dm.org/hex7c0/express-sitemap)
-[![Coveralls](https://img.shields.io/coveralls/hex7c0/express-sitemap.svg)](https://coveralls.io/r/hex7c0/express-sitemap)
+[![NPM version](https://img.shields.io/npm/v/@stdian/express-sitemap.svg)](https://www.npmjs.com/package/@stdian/express-sitemap)
 
 Sitemap and Robots for [Express.js](http://expressjs.com/) 3 and 4
 
@@ -13,7 +9,7 @@ Sitemap and Robots for [Express.js](http://expressjs.com/) 3 and 4
 Install through NPM
 
 ```bash
-npm install express-sitemap
+npm install @stdian/express-sitemap
 ```
 or
 ```bash
@@ -135,28 +131,29 @@ sitemap.TXTtoWeb(res);
 
 #### options
 
- - `http` - **String** Website HTTP protocol (http | https) *(default "http")*
- - `cache` - **Integer** Enable cache integration, refresh map after this millisecond value *(default "false")*
- - `url` - **String** Website URL *(default "127.0.0.1")*
- - `port` - **Number** Website Port *(default "80")*
- - `head` - **String** Head of XML file *(default "<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">")*
- - `sitemap` - **String** Name of sitemap file *(default "sitemap.xml")*
- - `robots` - **String** Name of robots file *(default "robots.txt")*
- - `sitemapSubmission` - **String** Set `Sitemap` absolute location into robots *(default "disable")*
- - `route` - **Object** Add extra information to sitemap related to this [documentation](http://www.sitemaps.org/protocol.html#xmlTagDefinitions) *(default "disabled")*
-  - `lastmod` - **Date** Integrity not controlled
-  - `changefreq` - **String** Integrity not controlled
-  - `priority` - **Float** Integrity not controlled
-  - `alternatepages` - **Array** Add alternate language pages related to this [documentation](https://support.google.com/webmasters/answer/2620865)
-    - `rel` - **String** Integrity not controlled
-    - `hreflang` - **String** Integrity not controlled
-    - `href` - **String** Integrity not controlled
-  - `allow` - **Boolean** Flag for "allow" this route from parsing, and save into `robots.txt` *(default "null")*
-  - `disallow` - **Boolean** Flag for "disallow" this route from parsing, and save into `robots.txt` *(default "null")*
-  - `hide` - **Boolean** Flag for hide this route from globally parsing (no .xml or .txt) *(default "false")*
- - `map` - **Object** Force route (<loc>) detection and building *(default "disabled")*
- - `hideByRegex` - **Array** Array of RegEx that remove routes from output *(default "disabled")*
- - `generate` - **Object** Fastly generate sitemap from express app *(default "disabled")*
+ - `http` — **String** Website HTTP protocol (http | https) *(default "http")*
+ - `cache` — **Integer** Enable cache integration, refresh map after this millisecond value *(default "false")*
+ - `url` — **String** Website URL *(default "127.0.0.1")*
+ - `port` — **Number** Website Port *(default "80")*
+ - `head` — **String** Head of XML file *(default "<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">")*
+ - `sitemap` — **String** Name of sitemap file *(default "sitemap.xml")*
+ - `robots` — **String** Name of robots file *(default "robots.txt")*
+ - `sitemapSubmission` — **String** Set `Sitemap` absolute location into robots *(default "disable")*
+ - `route` — **Object** Add extra information to sitemap related to this [documentation](http://www.sitemaps.org/protocol.html#xmlTagDefinitions) *(default "disabled")*
+  - `lastmod` — **Date** Integrity not controlled
+  - `changefreq` — **String** Integrity not controlled
+  - `priority` — **Float** Integrity not controlled
+  - `image` — **String** Integrity not controlled
+  - `alternatepages` — **Array** Add alternate language pages related to this [documentation](https://support.google.com/webmasters/answer/2620865)
+    - `rel` — **String** Integrity not controlled
+    - `hreflang` — **String** Integrity not controlled
+    - `href` — **String** Integrity not controlled
+  - `allow` — **Boolean** Flag for "allow" this route from parsing, and save into `robots.txt` *(default "null")*
+  - `disallow` — **Boolean** Flag for "disallow" this route from parsing, and save into `robots.txt` *(default "null")*
+  - `hide` — **Boolean** Flag for hide this route from globally parsing (no .xml or .txt) *(default "false")*
+ - `map` — **Object** Force route (<loc>) detection and building *(default "disabled")*
+ - `hideByRegex` — **Array** Array of RegEx that remove routes from output *(default "disabled")*
+ - `generate` — **Object** Fastly generate sitemap from express app *(default "disabled")*
 
 you can use `route: {'ALL': {} }` if you want to propagate extra information to all your urls
 

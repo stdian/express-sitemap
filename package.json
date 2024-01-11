@@ -1,6 +1,6 @@
 {
   "version": "1.9.0",
-  "name": "express-sitemap",
+  "name": "@stdian/express-sitemap",
   "description": "sitemap and robots for expressjs",
   "keywords": [
     "sitemap",
@@ -9,19 +9,18 @@
     "express"
   ],
   "preferGlobal": false,
-  "homepage": "https://github.com/hex7c0/express-sitemap",
+  "homepage": "https://github.com/stdian/express-sitemap",
   "author": {
-    "name": "hex7c0",
-    "email": "hex7c0@gmail.com",
-    "url": "https://hex7c0.github.io/"
+    "name": "stdian",
+    "email": "stdian@mail.ru"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/hex7c0/express-sitemap.git"
+    "url": "https://github.com/stdian/express-sitemap.git"
   },
   "bugs": {
-    "url": "https://github.com/hex7c0/express-sitemap/issues",
-    "email": "hex7c0@gmail.com"
+    "url": "https://github.com/stdian/express-sitemap/issues",
+    "email": "stdian@mail.ru"
   },
   "main": "index.min.js",
   "dependencies": {
