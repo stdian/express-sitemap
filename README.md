@@ -6,7 +6,7 @@
 [![Dependency Status](https://img.shields.io/david/hex7c0/express-sitemap.svg)](https://david-dm.org/hex7c0/express-sitemap)
 [![Coveralls](https://img.shields.io/coveralls/hex7c0/express-sitemap.svg)](https://coveralls.io/r/hex7c0/express-sitemap)
 
-Sitemap and Robots for [expressjs](http://expressjs.com/) 3 and 4
+Sitemap and Robots for [Express.js](http://expressjs.com/) 3 and 4
 
 ## Installation
 
@@ -17,12 +17,12 @@ npm install express-sitemap
 ```
 or
 ```bash
-git clone git://github.com/hex7c0/express-sitemap.git
+git clone git://github.com/stdian/express-sitemap.git
 ```
 
 ## API
 
-inside expressjs project
+inside Express.js project
 ```js
 var sitemap = require('express-sitemap')();
 
@@ -33,7 +33,7 @@ sitemap.generate(app);
 
 ### Methods
 
-if you want generate your own url
+if you want to generate your own url
 ```js
 var sitemap = require('express-sitemap');
 
@@ -158,7 +158,7 @@ sitemap.TXTtoWeb(res);
  - `hideByRegex` - **Array** Array of RegEx that remove routes from output *(default "disabled")*
  - `generate` - **Object** Fastly generate sitemap from express app *(default "disabled")*
 
-you can use `route: {'ALL': {} }` if you want propagate extra information to all your urls
+you can use `route: {'ALL': {} }` if you want to propagate extra information to all your urls
 
 ## Examples
 
